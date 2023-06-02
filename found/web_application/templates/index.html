@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Page d'Inscription </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ENREGISTREMENT DES PARTICIPANTS</h1>
+        <form action="" method="POST">
+        
+
+            {% csrf_token %}
+            {{ form.as_p}}
+            <input type="submit" value="ENREGISTRER">
+            <p> <a href="{% url 'data' %}">PARTICIPANTS</a> </p>
+        </form>
+    </div>
+</body>
+
+</html>

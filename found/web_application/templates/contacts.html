@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIS</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+
+  }
+
+  body {
+    display: block;
+    text-align: center;
+  }
+</style>
+
+<body>
+
+
+  <h1>FICHE DE CANDIDATURE</h1>
+
+  <table style="margin-top: 30px;" cellpadding="1" width="100%">
+    <tr>
+    <tr style="margin-top: 20px;">
+      <th>NOM</th>
+      <th>PRENOM</th>
+      <th>NUMERO</th>
+      <th>EMAIL</th>
+
+    </tr>
+    
+      {% for donnee in donnees %}
+      <td> {{ donnee.nom }} </td>
+      <td> {{ donnee.prenom }} </td>
+      <td> {{ donnee.numero }} </td>
+      <td> {{ donnee.email }} </td>
+
+      </tr>
+    
+    {% endfor %}
+  </table>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+
+body{
+   background-color: rgb(74, 76, 112);
+   font-size: 2rem;
+}
+
+.container{
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
